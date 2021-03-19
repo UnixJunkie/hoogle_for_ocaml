@@ -7,4 +7,4 @@ fi
 
 OPAM_SWITCH=`opam config var switch`
 MLI_FILES=`find ~/.opam/$OPAM_SWITCH/ -regex '.*\.mli$'`
-agrep --colour "$@" $MLI_FILES
+egrep --color "$@" $MLI_FILES
